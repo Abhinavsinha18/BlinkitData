@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const connect = require('./db');
-const {FruitModel} = require('./Model/data.model')
+const {FruitModel, FrozenModel, FreshModel, FlowerModel, ExoticModel, ComboModel, FreshvegitableModel} = require('./Model/data.model')
 const {OrganicModel} = require('./Model/data.model')
 const {LeafModel} = require('./Model/data.model')
 const cors = require('cors');
@@ -823,6 +823,967 @@ const DataInsert = async()=>{
           "AddToCart__OutOfStockTag-sc-17ig0e3-2": "Out of Stock"
         }
       ])
+
+  await FrozenModel.insertMany([
+        {
+          "product__wrapper href": "https://blinkit.com/prn/safal-green-peas/prid/28390",
+          "tag": "14%\nOFF",
+          "image": "https://cdn.grofers.com/app/images/products/sliding_image/28390a.jpg?ts=1613137376",
+          "etaTag-text 2": "8 mins",
+          "title": "Safal Green Peas",
+          "weight": "500 g",
+          "price": "₹115",
+          "time": "36",
+          "markprice": "₹135"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/spt-frozen-green-peas/prid/379584",
+          "tag": "34%\nOFF",
+          "image": "https://cdn.grofers.com/app/images/products/sliding_image/379584a.jpg",
+          "etaTag-text 2": "8 mins",
+          "title": "SPT Frozen Green Peas",
+          "weight": "",
+          "price": "₹89",
+          "time": "28",
+          "markprice": "₹135"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/farmland-frozen-green-peas/prid/449124",
+          "tag": "34%\nOFF",
+          "image": "https://cdn.grofers.com/app/images/products/sliding_image/449124a.jpg",
+          "etaTag-text 2": "8 mins",
+          "title": "Farmland Frozen Green Peas",
+          "weight": "1 kg",
+          "price": "₹158",
+          "time": "42",
+          "markprice": "₹240"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/sakura-edamame-without-pod-frozen-soyabeans/prid/478802",
+          "tag": "",
+          "image": "https://cdn.grofers.com/app/images/products/sliding_image/478802a.jpg",
+          "etaTag-text 2": "30 mins",
+          "title": "Sakura Edamame Without Pod Frozen Soyabeans",
+          "weight": "500 g",
+          "price": "₹699",
+          "time": "42",
+          "markprice": ""
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/godrej-farmiez-frozen-green-peas/prid/490544",
+          "tag": "33%\nOFF",
+          "image": "https://cdn.grofers.com/app/images/products/sliding_image/490544a.jpg",
+          "etaTag-text 2": "8 mins",
+          "title": "Godrej Farmiez Frozen Green Peas",
+          "weight": "1 kg",
+          "price": "₹159",
+          "time": "46",
+          "markprice": "₹240"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/sakura-edamame-in-the-pod-frozen-soyabeans/prid/478801",
+          "tag": "",
+          "image": "https://cdn.grofers.com/app/images/products/sliding_image/478801a.jpg",
+          "etaTag-text 2": "30 mins",
+          "title": "Sakura Edamame in The Pod Frozen Soyabeans",
+          "weight": "500 g",
+          "price": "₹499",
+          "time": "47",
+          "markprice": ""
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/abbies-shiitake-raw-mushroom/prid/478782",
+          "tag": "",
+          "image": "https://cdn.grofers.com/app/images/products/sliding_image/478782a.jpg",
+          "etaTag-text 2": "30 mins",
+          "title": "Abbie's Shiitake Raw Mushroom",
+          "weight": "100 g",
+          "price": "₹375",
+          "time": "4",
+          "markprice": ""
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/spt-american-frozen-sweet-corn/prid/322036",
+          "tag": "47%\nOFF",
+          "image": "https://cdn.grofers.com/app/images/products/sliding_image/322036a.jpg",
+          "etaTag-text 2": "8 mins",
+          "title": "SPT American Frozen Sweet Corn",
+          "weight": "",
+          "price": "₹71",
+          "time": "32",
+          "markprice": "₹135"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/farmland-frozen-sweet-corn/prid/449125",
+          "tag": "30%\nOFF",
+          "image": "https://cdn.grofers.com/app/images/products/sliding_image/449125a.jpg",
+          "etaTag-text 2": "8 mins",
+          "title": "Farmland Frozen Sweet Corn",
+          "weight": "1 kg",
+          "time": "35",
+          "price": "₹139",
+          "markprice": "₹200"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/safal-sweet-corn/prid/28394",
+          "tag": "15%\nOFF",
+          "image": "https://cdn.grofers.com/app/images/products/sliding_image/28394a.jpg?ts=1590670288",
+          "etaTag-text 2": "8 mins",
+          "title": "Safal Sweet Corn",
+          "weight": "500 g",
+          "price": "₹85",
+          "time": "16",
+          "markprice": "₹100"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/spt-frozen-mixed-vegetables/prid/401935",
+          "tag": "48%\nOFF",
+          "image": "https://cdn.grofers.com/app/images/products/sliding_image/401935a.jpg",
+          "etaTag-text 2": "8 mins",
+          "title": "SPT Frozen Mixed Vegetables",
+          "weight": "500 g",
+          "time": "22",
+          "price": "₹62",
+          "markprice": "₹120"
+        }
+      ])
+  await FreshModel.insertMany([
+        {
+          "product__wrapper href": "https://blinkit.com/prn/green-moong-sprouts/prid/445281",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 2 PM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/445281a.jpg",
+          "tag": "12%\nOFF",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/445281a.jpg",
+          "title": "Green Moong Sprouts",
+          "weight": "150 g - 160 g",
+          "price": "₹42",
+          "time": "22",
+          "markprice": "₹48"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/mixed-sprouts/prid/196281",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 5 AM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/196281a.jpg",
+          "tag": "13%\nOFF",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/196281a.jpg",
+          "title": "Mixed Sprouts",
+          "weight": "200 g",
+          "price": "₹69",
+          "time": "27",
+          "markprice": "₹80"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/brown-chana-sprouts/prid/445280",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 2 PM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/445280a.jpg",
+          "tag": "12%\nOFF",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/445280a.jpg",
+          "title": "Brown Chana Sprouts",
+          "weight": "150 g - 160 g",
+          "price": "₹42",
+          "time": "27",
+          "markprice": "₹48"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/salad-box-hydroponically-grown/prid/450730",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 2 PM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/450730a.jpg",
+          "tag": "19%\nOFF",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/450730a.jpg",
+          "title": "Salad Box - Hydroponically Grown",
+          "weight": "1 box",
+          "price": "₹110",
+          "time": "23",
+          "markprice": "₹136"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/hearty-autumn-leafy-mix-hydroponically-grown/prid/370359",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 5 AM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/370359a.jpg",
+          "tag": "",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/370359a.jpg",
+          "title": "Hearty Autumn Leafy Mix - Hydroponically Grown",
+          "weight": "125 g - 150 g",
+          "price": "₹125",
+          "time": "21",
+          "markprice": ""
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/spicy-summer-leafy-mix-hydroponically-grown/prid/347551",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 5 AM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/347551a.jpg",
+          "tag": "",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/347551a.jpg",
+          "title": "Spicy Summer Leafy Mix - Hydroponically Grown",
+          "weight": "125 g - 150 g",
+          "price": "₹125",
+          "time": "23",
+          "markprice": ""
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/sprouts-combo/prid/487716",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_487716.jpg",
+          "tag": "13%\nOFF",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_487716.jpg",
+          "title": "Sprouts Combo",
+          "weight": "Combo of 2",
+          "price": "₹83",
+          "time": "23",
+          "markprice": "₹96"
+        }
+      ])
+
+  await FlowerModel.insertMany([
+        {
+          "product__wrapper href": "https://blinkit.com/prn/assorted-pooja-flowers/prid/450376",
+          "tag": "12%\nOFF",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/450376a.jpg",
+          "title": "Assorted Pooja Flowers",
+          "weight": "100 g",
+          "price": "₹48",
+          "time": "17",
+          "markprice": "₹55"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/orange-marigold-flower-string-garland-genda/prid/476877",
+          "tag": "15%\nOFF",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/476877a.jpg",
+          "title": "Orange Marigold Flower String / Garland (Genda)",
+          "weight": "",
+          "price": "₹69",
+          "time": "17",
+          "markprice": "₹82"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/orange-marigold-flowers-genda/prid/476812",
+          "tag": "20%\nOFF",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/476812a.jpg",
+          "title": "Orange Marigold Flowers (Genda)",
+          "weight": "100 g",
+          "price": "₹48",
+          "time": "18",
+          "markprice": "₹60"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/rose-flower-petals-gulab/prid/450385",
+          "tag": "20%\nOFF",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/450385a.jpg",
+          "title": "Rose Flower Petals (Gulab)",
+          "weight": "100 g",
+          "price": "₹48",
+          "time": "14",
+          "markprice": "₹60"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/yellow-marigold-flowers-genda/prid/476813",
+          "tag": "16%\nOFF",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/476813a.jpg",
+          "title": "Yellow Marigold Flowers (Genda)",
+          "weight": "100 g",
+          "price": "₹50",
+          "time": "14",
+          "markprice": "₹60"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/lotus-flower-kamal/prid/450390",
+          "tag": "14%\nOFF",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/450390a.jpg",
+          "title": "Lotus Flower (Kamal)",
+          "weight": "",
+          "time": "13",
+          "price": "₹63",
+          "markprice": "₹74"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/betel-leaves-paan-patta/prid/450391",
+          "tag": "13%\nOFF",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/450391a.jpg",
+          "title": "Betel Leaves (Paan Patta)",
+          "weight": "5 pieces",
+          "price": "₹31",
+          "time": "13",
+          "markprice": "₹36"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/orange-marigold-flowers-yellow-marigold-flowers-combo/prid/495884",
+          "tag": "19%\nOFF",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/495884a.jpg",
+          "title": "Orange Marigold Flowers + Yellow Marigold Flowers Combo",
+          "weight": "100 g + 100 g",
+          "price": "₹97",
+          "time": "12",
+          "markprice": "₹120"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/pooja-combo/prid/496258",
+          "tag": "15%\nOFF",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/496258a.jpg",
+          "title": "Pooja Combo",
+          "weight": "Combo of 3",
+          "price": "₹131",
+          "time": "12",
+          "markprice": "₹155"
+        }
+      ])
+ await ExoticModel.insertMany([
+        {
+          "product__wrapper href": "https://blinkit.com/prn/broccoli/prid/369742",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 5 AM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/369742a.jpg",
+          "tag": "13%\nOFF",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/369742a.jpg",
+          "etaTag-text 2": "8 mins",
+          "title": "Broccoli",
+          "weight": "1 piece (300 g - 400 g)",
+          "price": "₹205",
+          "time": "11",
+          "markprice": "₹237"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/red-capsicum/prid/39394",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 2 PM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/39394a.jpg",
+          "tag": "19%\nOFF",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/39394a.jpg",
+          "etaTag-text 2": "8 mins",
+          "title": "Red Capsicum",
+          "weight": "1 piece (125 g - 175 g)",
+          "price": "₹46",
+          "time": "11",
+          "markprice": "₹57"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/yellow-capsicum/prid/39395",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 5 AM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/39395a.jpg",
+          "tag": "20%\nOFF",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/39395a.jpg",
+          "etaTag-text 2": "8 mins",
+          "title": "Yellow Capsicum",
+          "weight": "1 piece (125 g - 175 g)",
+          "price": "₹46",
+          "time": "15",
+          "markprice": "₹58"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/green-zucchini/prid/257199",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 2 PM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/257199a.jpg",
+          "tag": "20%\nOFF",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/257199a.jpg",
+          "etaTag-text 2": "8 mins",
+          "title": "Green Zucchini",
+          "weight": "1 piece (200 g - 250 g)",
+          "price": "₹73",
+          "time": "7",
+          "markprice": "₹92"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/valencia-orange/prid/242283",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 5 AM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/462106a.jpg",
+          "tag": "17%\nOFF",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/242283a.jpg",
+          "etaTag-text 2": "8 mins",
+          "title": "Valencia Orange",
+          "weight": "3 pieces (550 g - 650 g)",
+          "price": "₹100",
+          "time": "34",
+          "markprice": "₹121"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/red-delicious-apple/prid/462106",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 2 PM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/242283a.jpg",
+          "tag": "22%\nOFF",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/462106a.jpg",
+          "etaTag-text 2": "8 mins",
+          "title": "Red Delicious Apple",
+          "weight": "4 pieces (450 g - 650 g)",
+          "price": "₹248",
+          "time": "11",
+          "markprice": "₹319"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/blueberry/prid/362127",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 5 AM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/362127a.jpg",
+          "tag": "14%\nOFF",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/362127a.jpg",
+          "etaTag-text 2": "8 mins",
+          "title": "Blueberry",
+          "weight": "125 g",
+          "time": "23",
+          "price": "₹300",
+          "markprice": "₹351"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/cherry-tomato/prid/440229",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 2 PM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/440229a.jpg",
+          "tag": "17%\nOFF",
+          "sc-iBkjds src": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/440229a.jpg",
+          "etaTag-text 2": "8 mins",
+          "title": "Cherry Tomato",
+          "weight": "200 g",
+          "price": "₹93",
+          "time": "13",
+          "markprice": "₹113"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/baby-corn-packet/prid/137816",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 2 PM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/137816a.jpg",
+          "tag": "18%\nOFF",
+          "sc-iBkjds src": "https://blinkit.com/cn/exotics/cid/1487/278",
+          "etaTag-text 2": "8 mins",
+          "title": "Baby Corn - Packet",
+          "weight": "200 g",
+          "time": "16",
+          "price": "₹40",
+          "markprice": "₹49"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/royal-gala-apple/prid/311059",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 2 PM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/311059a.jpg",
+          "tag": "13%\nOFF",
+          "sc-iBkjds src": "https://blinkit.com/cn/exotics/cid/1487/278",
+          "etaTag-text 2": "8 mins",
+          "title": "Royal Gala Apple",
+          "weight": "4 pieces (450 g - 650 g)",
+          "price": "₹224",
+          "time": "19",
+          "markprice": "₹259"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/basil-leaves/prid/440230",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 5 AM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/440230a.jpg",
+          "tag": "21%\nOFF",
+          "sc-iBkjds src": "https://blinkit.com/cn/exotics/cid/1487/278",
+          "etaTag-text 2": "8 mins",
+          "title": "Basil Leaves",
+          "weight": "50 g",
+          "price": "₹15",
+          "time": "13",
+          "markprice": "₹19"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/avocado/prid/311058",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 2 PM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/311058a.jpg",
+          "tag": "16%\nOFF",
+          "sc-iBkjds src": "https://blinkit.com/cn/exotics/cid/1487/278",
+          "etaTag-text 2": "8 mins",
+          "title": "Avocado",
+          "weight": "1 piece (200 g - 300 g)",
+          "price": "₹195",
+          "time": "15",
+          "markprice": "₹234"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/bartlett-pear/prid/465535",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 5 AM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/465535a.jpg",
+          "tag": "18%\nOFF",
+          "sc-iBkjds src": "https://blinkit.com/cn/exotics/cid/1487/278",
+          "etaTag-text 2": "8 mins",
+          "title": "Bartlett Pear",
+          "weight": "4 pieces (500 g - 600 g)",
+          "price": "₹111",
+          "time": "14",
+          "markprice": "₹136"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/dry-gucchi-jumbo-mushroom/prid/327317",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/327317a.jpg",
+          "tag": "24%\nOFF",
+          "sc-iBkjds src": "https://blinkit.com/cn/exotics/cid/1487/278",
+          "etaTag-text 2": "30 mins",
+          "title": "Dry Gucchi Jumbo Mushroom",
+          "weight": "25 g",
+          "time": "13",
+          "price": "₹900",
+          "markprice": "₹1199"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/parsley/prid/443554",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 2 PM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/443554a.jpg",
+          "tag": "22%\nOFF",
+          "sc-iBkjds src": "https://blinkit.com/cn/exotics/cid/1487/278",
+          "etaTag-text 2": "8 mins",
+          "title": "Parsley",
+          "weight": "50 g",
+          "time": "15",
+          "price": "₹28",
+          "markprice": "₹36"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/mini-orange/prid/69047",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 2 PM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/69047a.jpg",
+          "tag": "17%\nOFF",
+          "sc-iBkjds src": "https://blinkit.com/cn/exotics/cid/1487/278",
+          "etaTag-text 2": "8 mins",
+          "title": "Mini Orange",
+          "weight": "500 g",
+          "time": "16",
+          "price": "₹135",
+          "markprice": "₹164"
+        },
+        {
+          "product__wrapper href": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/375037a.jpg",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/375037a.jpg",
+          "tag": "16%\nOFF",
+          "sc-iBkjds src": "https://blinkit.com/cn/exotics/cid/1487/278",
+          "etaTag-text 2": "30 mins",
+          "title": "Dry Chanterelle Sliced Mushroom",
+          "weight": "25 g",
+          "price": "₹750",
+          "time": "16",
+          "markprice": "₹899"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/dry-gucchi-mushroom/prid/3899",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/3899a.jpg",
+          "tag": "16%\nOFF",
+          "sc-iBkjds src": "https://blinkit.com/cn/exotics/cid/1487/278",
+          "etaTag-text 2": "30 mins",
+          "title": "Dry Gucchi Mushroom",
+          "weight": "25 g",
+          "price": "₹750",
+          "time": "14",
+          "markprice": "₹899"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/dry-porcini-sliced-mushroom/prid/184278",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/184278a.jpg",
+          "tag": "16%\nOFF",
+          "sc-iBkjds src": "https://blinkit.com/cn/exotics/cid/1487/278",
+          "etaTag-text 2": "30 mins",
+          "title": "Dry Porcini Sliced Mushroom",
+          "weight": "25 g",
+          "price": "₹750",
+          "time": "13",
+          "markprice": "₹899"
+        },
+        {
+          "product__wrapper href": "https://blinkit.com/prn/green-apple/prid/336515",
+          "ProductTagstyles__Container-sc-1pmr8q3-0": "Sourced at 2 PM",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/336515a.jpg",
+          "tag": "19%\nOFF",
+          "sc-iBkjds src": "https://blinkit.com/cn/exotics/cid/1487/278",
+          "etaTag-text 2": "8 mins",
+          "title": "Green Apple",
+          "weight": "4 pieces (500 g - 700 g)",
+          "price": "₹266",
+          "time": "12",
+          "markprice": "₹332"
+        }
+      ])
+await ComboModel.insertMany([
+    {
+      "product__wrapper href": "https://blinkit.com/prn/hybrid-tomato-pack-of-2/prid/487714",
+      "tag": "22%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_487714.jpg",
+      "title": "Hybrid Tomato - Pack of 2",
+      "weight": "2 x 500 g",
+      "price": "₹59",
+      "markprice": "₹76",
+      "time": "5",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "ADD",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": ""
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/onion-pack-of-2/prid/487712",
+      "tag": "14%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_487712.jpg",
+      "title": "Onion - Pack of 2",
+      "weight": "2 x 1 kg",
+      "price": "₹63",
+      "markprice": "₹74",
+      "time": "14",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "ADD",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": ""
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/potato-chipsona-pack-of-3/prid/487707",
+      "tag": "20%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_487707.jpg",
+      "title": "Potato (Chipsona) - Pack of 3",
+      "weight": "3 x 1 kg",
+      "price": "₹86",
+      "markprice": "₹108",
+      "time": "17",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "ADD",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": ""
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/yellow-red-capsicum-combo/prid/487715",
+      "tag": "21%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_487715.jpg",
+      "title": "Yellow + Red Capsicum Combo",
+      "weight": "Combo of 2",
+      "price": "₹100",
+      "markprice": "₹127",
+      "time": "19",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "ADD",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": ""
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/mixed-capsicum-combo/prid/487721",
+      "tag": "20%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_487721.jpg",
+      "title": "Mixed Capsicum Combo",
+      "weight": "Combo of 3",
+      "price": "₹144",
+      "markprice": "₹182",
+      "time": "13",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "ADD",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": ""
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/green-capsicum-pack-of-2/prid/488116",
+      "tag": "20%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/488116a.jpg",
+      "title": "Green Capsicum - Pack of 2",
+      "weight": "2 x 250 g - 280 g",
+      "price": "₹87",
+      "markprice": "₹110",
+      "time": "19",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "ADD",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": ""
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/potato-chipsona-onion-hybrid-tomato-combo/prid/486342",
+      "tag": "18%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_486342.jpg",
+      "title": "Potato (Chipsona) + Onion + Hybrid Tomato Combo",
+      "weight": "Combo of 3",
+      "price": "₹90",
+      "markprice": "₹111",
+      "time": "10",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "ADD",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": ""
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/sprouts-combo/prid/487716",
+      "tag": "13%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_487716.jpg",
+      "title": "Sprouts Combo",
+      "weight": "Combo of 2",
+      "price": "₹83",
+      "markprice": "₹96",
+      "time": "15",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "ADD",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": ""
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/sweet-sour-smoothie-combo/prid/496929",
+      "tag": "18%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/496929a.jpg",
+      "title": "Sweet & Sour Smoothie Combo",
+      "weight": "4 pieces (500 g - 800 g) + 1 piece (800 g - 1000 g)",
+      "price": "₹171",
+      "time": "23",
+      "markprice": "₹209",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "ADD",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": ""
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/nimbu-mirchi/prid/339444",
+      "tag": "81%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/339444a.jpg",
+      "title": "Nimbu Mirchi",
+      "weight": "",
+      "price": "₹19",
+      "markprice": "₹100",
+      "time": "43",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "ADD",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": ""
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/tender-coconut-nariyal-pani/prid/352443",
+      "tag": "22%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/352443a.jpg",
+      "title": "Tender Coconut (Nariyal Pani)",
+      "weight": "",
+      "price": "₹67",
+      "markprice": "₹86",
+      "time": "45",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "ADD",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": ""
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/banana-pack-of-2/prid/488115",
+      "tag": "20%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/488115a.jpg",
+      "title": "Banana - Pack of 2",
+      "weight": "2 x 3 pieces",
+      "price": "₹83",
+      "markprice": "₹104",
+      "time": "39",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": "Out of Stock"
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/basic-fruits-combo/prid/487723",
+      "tag": "15%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_487723.jpg",
+      "title": "Basic Fruits Combo",
+      "weight": "Combo of 3",
+      "price": "₹369",
+      "markprice": "₹437",
+      "time": "32",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": "Out of Stock"
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/desi-tomato-pack-of-2-desi-tamatar/prid/487713",
+      "tag": "16%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_487713.jpg",
+      "title": "Desi Tomato - Pack of 2 (Desi Tamatar)",
+      "weight": "2 x 500 g",
+      "price": "₹77",
+      "markprice": "₹92",
+      "time": "23",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": "Out of Stock"
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/bananarama-smoothie-combo/prid/489071",
+      "tag": "16%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/489071a.jpg",
+      "title": "Bananarama smoothie Combo",
+      "weight": "Combo of 2",
+      "price": "₹338",
+      "markprice": "₹403",
+      "time": "14",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": "Out of Stock"
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/salad-vegetables-combo/prid/486343",
+      "tag": "22%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_486343.jpg",
+      "title": "Salad Vegetables Combo",
+      "weight": "Combo of 3",
+      "price": "₹379",
+      "markprice": "₹486",
+      "time": "9",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": "Out of Stock"
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/french-beans-pack-of-2/prid/488114",
+      "tag": "22%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/488114a.jpg",
+      "title": "French Beans - Pack of 2",
+      "weight": "2 x 250 g",
+      "price": "₹101",
+      "markprice": "₹130",
+      "time": "9",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": "Out of Stock"
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/melon-combo/prid/486340",
+      "tag": "15%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_486340.jpg",
+      "title": "Melon Combo",
+      "weight": "Combo of 2",
+      "price": "₹289",
+      "markprice": "₹341",
+      "time": "10",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": "Out of Stock"
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/seasonal-vegetables-combo/prid/487720",
+      "tag": "17%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_487720.jpg",
+      "title": "Seasonal Vegetables Combo",
+      "weight": "Combo of 3",
+      "price": "₹128",
+      "markprice": "₹156",
+      "time": "12",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": "Out of Stock"
+    },
+    {
+      "product__wrapper href": "https://blinkit.com/prn/coriander-bunch-green-chilli-combo/prid/486339",
+      "tag": "15%\nOFF",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/full_screen/pro_486339.jpg",
+      "title": "Coriander Bunch + Green Chilli Combo",
+      "weight": "Combo of 2",
+      "price": "₹64",
+      "markprice": "₹76",
+      "time": "19",
+      "AddToCart__AddButtonText-sc-17ig0e3-4": "",
+      "AddToCart__OutOfStockTag-sc-17ig0e3-2": "Out of Stock"
+    }
+  ])
+  await FreshvegitableModel.insertMany([
+    {
+      "tag": "23% OFF",
+      "para": "🍃Sourced at 5 AM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/391306a.jpg",
+      "title": "Onion",
+      "time": 5,
+      "weight": "1kg",
+      "price": "₹30",
+      "markprice": "₹39"
+    },
+    {
+      "tag": "18% OFF",
+      "para": "🍃Sourced at 2 PM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/333785a.jpg",
+      "title": "Potato (Chipsona) (Aloo)",
+      "time": 2,
+      "weight": "1kg",
+      "price": "₹30",
+      "markprice": "₹37"
+    },
+    {
+      "tag": "14% OFF",
+      "para": "🍃Sourced at 5 AM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/3881a.jpg",
+      "title": "Hybrid Tomato (Tamatar)",
+      "time": 40,
+      "weight": "500g",
+      "price": "₹30",
+      "markprice": "₹35"
+    },
+    {
+      "tag": "15% OFF",
+      "para": "🍃Sourced at 2 PM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/423735a.jpg",
+      "title": "Green Chilli (Hari Mirch)",
+      "time": 50,
+      "weight": "100g",
+      "price": "₹17",
+      "markprice": "₹20"
+    },
+    {
+      "tag": "17% OFF",
+      "para": "🍃Sourced at 2 AM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/3888a.jpg",
+      "title": "Green Capsicum (Shimla Mirch)",
+      "time": 10,
+      "weight": "250g - 280g",
+      "price": "₹75",
+      "markprice": "₹91"
+    },
+    {
+      "tag": "20% OFF",
+      "para": "🍃Sourced at 2 PM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/10088a.jpg",
+      "title": "Cucumber (Kheera)",
+      "time": 42,
+      "weight": "500g - 700g",
+      "price": "₹49",
+      "markprice": "₹62"
+    },
+    {
+      "tag": "10% OFF",
+      "para": "🍃Sourced at 5 AM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/421703a.jpg",
+      "title": "Ginger (Adrak)",
+      "time": 11,
+      "weight": "250g",
+      "price": "₹32",
+      "markprice": "₹40"
+    },
+    {
+      "tag": "13% OFF",
+      "para": "🍃Sourced at 2 PM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/17748a.jpg",
+      "title": "Lemon (Nimbu)",
+      "time": 8,
+      "weight": "6 pieces (150 g - 220 g)",
+      "price": "₹25",
+      "markprice": "₹29"
+    },
+    {
+      "tag": "18% OFF",
+      "para": "🍃Sourced at 2 PM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/3913a.jpg",
+      "title": "Orange Carrot (Gajar)",
+      "time": 20,
+      "weight": "200g - 250g",
+      "price": "₹26",
+      "markprice": "₹32"
+    },
+    {
+      "tag": "18% OFF",
+      "para": "🍃Sourced at 2 PM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/445675a.jpg",
+      "title": "Desi Tomato (Desi Tamatar)",
+      "time": 15,
+      "weight": "500g",
+      "price": "₹41",
+      "markprice": "₹50"
+    },
+    {
+      "tag": "17% OFF",
+      "para": "🍃Sourced at 2 PM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/440229a.jpg",
+      "title": "Cherry Tomato",
+      "time": 40,
+      "weight": "200g",
+      "price": "₹93",
+      "markprice": "₹113"
+    },
+    {
+      "tag": "22% OFF",
+      "para": "🍃Sourced at 2 PM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/3889a.jpg",
+      "title": "Coriander Bunch (Dhaniya)",
+      "time": 25,
+      "weight": "100g",
+      "price": "₹45",
+      "markprice": "₹58"
+    },
+    {
+      "tag": "21% OFF",
+      "para": "🍃Sourced at 2 PM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/3898a.jpg",
+      "title": "Lady Finger (Bhindi)",
+      "time": 45,
+      "weight": "250g",
+      "price": "₹15",
+      "markprice": "₹19"
+    },
+    {
+      "tag": "13% OFF",
+      "para": "🍃Sourced at 2 PM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/39394a.jpg",
+      "title": "Red Capsicum",
+      "time": 15,
+      "weight": "1 piece (125 g - 175 g)",
+      "price": "₹56",
+      "markprice": "₹65"
+    },
+    {
+      "tag": "16% OFF",
+      "para": "🍃Sourced at 2 PM",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/39395a.jpg",
+      "title": "Yellow Capsicum",
+      "time": 15,
+      "weight": "1 piece (125 g - 175 g)",
+      "price": "₹56",
+      "markprice": "₹67"
+    }
+  ])
+
+
 }
 
 DataInsert();
@@ -839,7 +1800,6 @@ app.get('/fruits',async (req,res)=>{
  res.send(data)
 })
 
-
 app.get('/organic',async (req,res)=>{
     let data = await OrganicModel.find();
  res.send( data)
@@ -849,6 +1809,33 @@ app.get('/leafs',async (req,res)=>{
     let data = await LeafModel.find();
  res.send( data)
 })
+
+app.get('/frozen',async (req,res)=>{
+    let data = await FrozenModel.find();
+ res.send( data)
+})
+
+app.get('/fresh',async (req,res)=>{
+    let data = await FreshModel.find();
+ res.send( data)
+})
+app.get('/flower',async (req,res)=>{
+    let data = await FlowerModel.find();
+ res.send( data)
+})
+app.get('/exotic',async (req,res)=>{
+    let data = await ExoticModel.find();
+ res.send( data)
+})
+app.get('/combo',async (req,res)=>{
+    let data = await ComboModel.find();
+ res.send( data)
+})
+app.get('/Freshvegitable',async (req,res)=>{
+    let data = await FreshvegitableModel.find();
+ res.send( data)
+})
+
 
 
 

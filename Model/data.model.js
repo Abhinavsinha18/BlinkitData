@@ -21,9 +21,21 @@ const fruitsSchema = mongoose.Schema({
 const FruitModel = mongoose.model('fruits', fruitsSchema);
 const OrganicModel = mongoose.model('organic', fruitsSchema);
 const LeafModel = mongoose.model('leafs', fruitsSchema);
+const FrozenModel = mongoose.model('frozen', fruitsSchema);
+const FreshModel = mongoose.model('fresh', fruitsSchema);
+const FlowerModel = mongoose.model('flower', fruitsSchema);
+const ExoticModel = mongoose.model('exotic', fruitsSchema);
+const ComboModel = mongoose.model('combo', fruitsSchema);
+const FreshvegitableModel = mongoose.model('Freshvegitable', fruitsSchema);
 
 module.exports ={
     FruitModel,
     OrganicModel,
-    LeafModel
+    LeafModel,
+    FrozenModel,
+    FreshModel,
+    FlowerModel,
+    ExoticModel,
+    ComboModel,
+    FreshvegitableModel
 }
