@@ -27,6 +27,7 @@ const FlowerModel = mongoose.model('flower', fruitsSchema);
 const ExoticModel = mongoose.model('exotic', fruitsSchema);
 const ComboModel = mongoose.model('combo', fruitsSchema);
 const FreshvegitableModel = mongoose.model('Freshvegitable', fruitsSchema);
+const ProductsAllwithDetailsModel = mongoose.model('productsAllwithDetails', fruitsSchema);
 
 module.exports ={
     FruitModel,
@@ -37,5 +38,6 @@ module.exports ={
     FlowerModel,
     ExoticModel,
     ComboModel,
-    FreshvegitableModel
+    FreshvegitableModel,
+    ProductsAllwithDetailsModel
 }
