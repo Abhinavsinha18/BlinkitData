@@ -20,8 +20,10 @@ const fruitsSchema = mongoose.Schema({
 
 const FruitModel = mongoose.model('fruits', fruitsSchema);
 const OrganicModel = mongoose.model('organic', fruitsSchema);
+const LeafModel = mongoose.model('leafs', fruitsSchema);
 
 module.exports ={
     FruitModel,
-    OrganicModel
+    OrganicModel,
+    LeafModel
 }
