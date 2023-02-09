@@ -45,6 +45,13 @@ user.post('/login' , async (req,res)=>{
      }
 })
 
+
+
+user.get('/signup', async (req,res)=>{
+   const data= await UserModel.find();
+    res.send(data);
+})
+
 module.exports={
     user
 }
