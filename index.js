@@ -1,14 +1,16 @@
 const express = require('express');
 const app = express();
 const connect = require('./db');
+// const connected =require('./db')
 const {FruitModel, FrozenModel, FreshModel, FlowerModel, ExoticModel, ComboModel, FreshvegitableModel, ProductsAllwithDetailsModel} = require('./Model/data.model')
 const {OrganicModel} = require('./Model/data.model')
 const {LeafModel} = require('./Model/data.model')
 const cors = require('cors');
+const { user } = require('./Route/user.route');
 
 app.use(express.json());
 app.use(cors());
-
+app.use('/',user)
 const DataInsert = async()=>{
     await FruitModel.insertMany([
         {
@@ -3594,9 +3596,9 @@ app.get('/productsAllwithDetails',async (req,res)=>{
 
 
 
-app.listen(4000,async function(){
+app.listen(4040,async function(){
     try {
-        await connect;
+        await connect;  
         console.log("connected");
     } catch (error) {
         console.log(error);
